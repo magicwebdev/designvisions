@@ -1,0 +1,42 @@
+.cover {
+  &__inner {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/src/images/cover-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center right 48px;
+  }
+  &__content {
+    width: 480px;
+    height: 390px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(209, 91, 143, 0.9) 0%, rgba(225, 166, 173, 0.9) 100%);
+    color: $white;
+    padding: 90px 65px 90px 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__title {
+    font-family: 'Bellota';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    font-size: 18px;
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+  }
+  &__social-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &__social-link {
+  }
+  &__social-img {
+  }
+}

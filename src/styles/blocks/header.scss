@@ -1,1 +1,87 @@
-
+.header {
+  &__inner {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+  }
+  &__menu {
+    display: flex;
+  }
+  &__menu-item {
+  }
+  &__menu-link {
+    padding: 10px 0;
+    font-family: 'Bellota', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-right: 24px;
+    position: relative;
+    transition: all 0.5s ease;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background-color: $primary;
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    }
+    &:hover {
+      color: $primary;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &__contacts-link {
+    position: relative;
+    font-family: 'Bellota', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    transition: all 0.5s ease;
+    &--phone {
+      padding-left: 46px;
+      margin-bottom: 20px;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/images/icons/phone.svg');
+        top: -3px;
+        left: 0;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+    &--mail {
+      padding-left: 38px;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/images/icons/mail.svg');
+        top: -2px;
+        left: 0;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

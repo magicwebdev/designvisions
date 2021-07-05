@@ -1,0 +1,41 @@
+.portfolio {
+  &__inner {
+    padding-bottom: 90px;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__slider {
+  }
+  &__slider-item {
+    margin-bottom: 24px;
+  }
+  &__slider-img {
+    margin-bottom: 16px;
+    width: 700px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  &__slider-info {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots button {
+  margin: 5px;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+}
+.slick-dots .slick-active button {
+  background-color: $primary;
+}
