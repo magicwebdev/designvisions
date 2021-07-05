@@ -19,6 +19,7 @@ body {
 }
 
 a {
+  font-family: $fontFamily;
   display: inline-block;
   text-decoration: none;
   color: $text;
