@@ -45,9 +45,13 @@ button {
 input:not([type='checkbox']):not([type='radio']),
 textarea {
   display: block;
-  width: 100%;
   font-family: $fontFamily;
   resize: none;
+  outline: none;
+}
+
+input:focus{
+  border: 2px solid $primary;
 }
 
 .container {
