@@ -1,0 +1,43 @@
+.services {
+  background: linear-gradient(103.92deg, rgba(209, 91, 143, 0.9) 0%, rgba(225, 166, 173, 0.9) 100%);
+  &__inner {
+    padding: 90px 0 70px;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__list {
+  }
+  &__list-item {
+    padding: 40px 60px 30px 120px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  &__list-title {
+    font-family: 'Bellota';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 48px;
+      height: 42px;
+      position: absolute;
+      background-image: url('/src/images/icons/checkmark.svg');
+      top: 0;
+      left: -80px;
+
+    }
+  }
+  &__list-text {
+  }
+  &__list-price {
+    display: block;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,79 @@
+.stages {
+  &__inner {
+    padding: 0 0 90px 0;
+    display: flex;
+  }
+  &__content {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__content-wrapper {
+    padding-left: 98px;
+    max-width: 510px;
+  }
+  &__content-title {
+  }
+  &__content-list {
+  }
+  &__content-item {
+    margin-bottom: 26px;
+  }
+  &__content-subtitle {
+    display: block;
+    font-family: 'Bellota';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      content: '1';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      left: -98px;
+      top: 0;
+      background: $primary;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      text-align: center;
+      font-family: 'Bellota';
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 50px;
+      text-transform: uppercase;
+      color: $white;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: -74px;
+      width: 2px;
+      height: 50px;
+      background-color: $primary;
+    }
+    &--2 {
+      &::before {
+        content: '2';
+      }
+    }
+    &--3 {
+      &::before {
+        content: '3';
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__content-btn {
+  }
+  &__image {
+    flex-basis: 50%;
+  }
+  &__image-item {
+  }
+}
