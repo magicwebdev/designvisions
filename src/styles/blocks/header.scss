@@ -69,9 +69,7 @@
     align-items: center;
     transition: all 0.5s;
     @media (max-width: 820px) {
-      display: none;
-    }
-    &.active {
+      // display: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -85,6 +83,10 @@
       justify-content: center;
       box-shadow: 0px 2px 10px 0 #DCD2C4;
       z-index: 1;
+      transform: translateY(-100%);
+    }
+    &.active {
+      transform: translateY(0);
     }
   }
   &__menu-list {

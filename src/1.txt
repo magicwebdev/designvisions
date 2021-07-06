@@ -1,0 +1,1 @@
+<div data-image='http://desvision.beget.tech/assets/images/cover-bg.jpg'></div>
