@@ -2,11 +2,17 @@
   font-family: 'Bellota';
   font-weight: 400;
   font-size: 24px;
-  line-height: 1;
+  line-height: 1.4;
   text-transform: uppercase;
   color: $text;
   text-align: center;
   &--light {
     color: $white;
+  }
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
+  @media (max-width: 600px) {
+    font-size: 18px;
   }
 }

@@ -1,18 +1,37 @@
 .contact {
   &__inner {
     padding: 90px 0;
+    @media (max-width: 800px) {
+      padding: 40px 0;
+    }
   }
   &__title {
     margin-bottom: 20px;
+    @media (max-width: 800px) {
+      margin-bottom: 10px;
+    }
   }
   &__subtitle {
+    margin: 0 auto;
     font-size: 18px;
     text-align: center;
     margin-bottom: 40px;
+    @media (max-width: 800px) {
+      margin-bottom: 20px;
+      font-size: 16px;
+      max-width: 330px;
+    }
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
   }
   &__form {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__input {
     flex-basis: 32%;
@@ -24,6 +43,10 @@
     font-size: 18px;
     line-height: 60px;
     color: $primary;
+    @media (max-width: 800px) {
+      width: 90%;
+      margin-bottom: 16px;
+    }
     &::placeholder {
       font-weight: 400;
       font-size: 18px;
@@ -33,5 +56,9 @@
   }
   &__btn {
     flex-basis: 32%;
+    @media (max-width: 800px) {
+      flex: 1 1 auto;
+      width: 90%;
+    }
   }
 }

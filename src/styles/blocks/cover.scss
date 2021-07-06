@@ -7,6 +7,14 @@
     background-image: url('/src/images/cover-bg.jpg');
     background-repeat: no-repeat;
     background-position: center right 48px;
+    @media (max-width: 920px) {
+      background-size: 90%;
+      padding: 50px 0;
+    }
+    @media (max-width: 780px) {
+      background-image: none;
+      padding: 30px 0;
+    }
   }
   &__content {
     width: 480px;
@@ -16,6 +24,14 @@
     color: $white;
     padding: 90px 65px 90px 70px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media (max-width: 780px) {
+      width: 90%;
+    }
+    @media (max-width: 560px) {
+      padding: 60px 35px 60px 40px;
+      height: auto;
+
+    }
   }
   &__title {
     font-family: 'Bellota';
@@ -24,9 +40,20 @@
     line-height: 50px;
     text-transform: uppercase;
     margin-bottom: 24px;
+    @media (max-width: 560px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    @media (max-width: 440px) {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
   &__subtitle {
     font-size: 18px;
+    @media (max-width: 560px) {
+      font-size: 14px;
+    }
   }
   &__social {
     display: flex;

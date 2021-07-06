@@ -1,25 +1,46 @@
 .portfolio {
   &__inner {
-    padding-bottom: 90px;
+    padding-bottom: 90px ;
+    @media (max-width: 800px) {
+      padding-bottom: 30px;
+    }
   }
   &__title {
     margin-bottom: 60px;
+    @media (max-width: 800px) {
+      margin-bottom: 30px;
+    }
   }
   &__slider {
   }
   &__slider-item {
     margin-bottom: 24px;
+    @media (max-width: 800px) {
+      margin-bottom: 16px;
+    }
   }
   &__slider-img {
+    margin: 0 auto;
     margin-bottom: 16px;
     width: 700px;
-    height: 440px;
+    height: 500px;
     object-fit: cover;
     border-radius: 8px;
+    @media (max-width: 1160px) {
+      width: 900px;
+
+    }
+    @media (max-width: 840px) {
+      height: 400px;
+
+    }
   }
   &__slider-info {
     text-align: center;
     font-size: 18px;
+    @media (max-width: 670px) {
+      font-size: 14px;
+    }
   }
 }
 
